@@ -38,6 +38,6 @@ class Student
     student = student.new(name, grade)
     student.save
   end
-  end
+  
 
 end
