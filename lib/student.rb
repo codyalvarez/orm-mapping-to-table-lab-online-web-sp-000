@@ -21,6 +21,7 @@ class Student
       end
 
   def self.drop_table
+    sql = <<-SQL
   end
 
   def save
@@ -34,6 +35,9 @@ class Student
   end
 
   def self.create
+    student = student.new(name, grade)
+    student.save
+  end
   end
 
 end
