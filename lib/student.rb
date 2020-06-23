@@ -9,14 +9,14 @@ class Student
   end
 
   def self.create_table
-    sql = <<-sql
+    sql = <<-SQL
       CREATE TABLE IF NOT EXISTS songs (
       id INTEGER PRIMARY KEY,
       name TEXT,
       album TEXT
       )
-      SQLite3
-  end
-
-
+      SQL 
+      DB[:conn].execute(sql)
+      end
+    
 end
