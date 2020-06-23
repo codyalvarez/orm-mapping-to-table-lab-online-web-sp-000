@@ -21,10 +21,9 @@ class Student
   end
 
   def self.drop_table
-    sql = <<-SQL
+    # sql = <<-SQL
     DELETE FROM students;
-    SQL
-    DB[:conn].execute(table_check_sql)[0]
+
   end
 
   def save
