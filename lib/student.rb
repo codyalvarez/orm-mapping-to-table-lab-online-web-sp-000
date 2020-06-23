@@ -30,7 +30,7 @@ class Student
       SQL
 
       DB[:conn].execute(sql, self.name, self.album)
-    end
+
   end
 
   def self.create
