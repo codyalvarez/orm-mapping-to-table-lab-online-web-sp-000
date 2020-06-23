@@ -24,7 +24,7 @@ class Student
     sql = <<-SQL
     DELETE FROM students;
     SQL
-    DB[:conn].execute(table_check_sql)[0]).
+    DB[:conn].execute(table_check_sql)[0]
   end
 
   def save
